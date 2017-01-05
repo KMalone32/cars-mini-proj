@@ -25,7 +25,7 @@ app.delete('/cars/:id', carCtrl.destroy);
 app.get('/cart', cartCtrl.index);
 app.post('/cart', cartCtrl.create);
 
-var port = 3001;
+var port = config.port;
 app.listen(port, function() {
   console.log("listening to port", port);
 });
